@@ -404,6 +404,7 @@
 
     function makeFilePath(sourceType, pattern, pos, ch) {
       const cfg = SOURCE_CONFIG[sourceType];
+      // ★修正: DSをファイル名に追加      // 例: audio/BRI_RevChamber/tire/Pattern_A_bang_A1_DS_CH4.wav
       return `audio_nn/BRI_RevChamber/${cfg.folder}/Pattern_${pattern}_${cfg.token}_${pos}_CH${ch}.wav`;
     }
 
